@@ -18,15 +18,6 @@ a:hover {
   cursor: pointer;
 }
 
-#page-loading-blocs-notifaction {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: 100000;
-  background: #ffffff url("img/pageload-spinner.gif") no-repeat center center;
-}
-
 .bloc {
   width: 100%;
   clear: both;
@@ -647,13 +638,14 @@ h3,
 h4,
 h5,
 h6,
+figure,
 p,
 label,
 .btn,
 a {
   font-family: "helvetica";
   font-weight: 400;
-  color: #575757 !important;
+  color: #000000 !important;
 }
 
 .container {
@@ -739,6 +731,7 @@ h4 {
 
 .white {
   color: #ffffff !important;
+  font-size: 17px;
 }
 
 .portfolio-thumb {
@@ -777,12 +770,12 @@ h4 {
 }
 
 .tc-white {
-  color: #f3976c !important;
+  color: #fff !important;
 }
 
 .btn-atomic-tangerine {
   background: #f3976c;
-  color: #ffffff !important;
+  color: #000 !important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -792,10 +785,11 @@ h4 {
 
 .ltc-white {
   color: #ffffff !important;
+  font-size: 15px;
 }
 
 .ltc-white:hover {
-  color: #cccccc !important;
+  color: #d6d2d2 !important;
 }
 
 .ltc-atomic-tangerine {
