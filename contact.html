@@ -8,7 +8,7 @@
     />
     <meta
       name="description"
-      content="La Chouette agence est une entreprise web design basée à Lyon, qui aide les entreprises à devenir attractive et visible sur Internet. Prêt pour redonner vie à votre projet? Contactez notre équipe !"
+      content="La Chouette agence est une entreprise web design basée à Lyon, qui aide les entreprises à devenir attractive et visible sur Internet."
     />
     <meta
       name="viewport"
@@ -123,39 +123,46 @@
                 fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
               >
                 <div class="form-group">
-                  <label> Nom </label>
-                  <input id="name" class="form-control" required />
+                  <label for="name"> Nom *</label>
+                  <input
+                    id="name"
+                    class="form-control"
+                    placeholder="John Doe"
+                    required
+                  />
                 </div>
+                <br />
                 <div class="form-group">
-                  <label> Adresse email </label>
+                  <label for="email"> Adresse email * </label>
                   <input
                     id="email"
                     class="form-control"
                     type="email"
+                    placeholder="johndoe@mail.com"
                     required
                   />
                 </div>
+                <br />
                 <div class="form-group">
-                  <label> Comment nous avez-vous connu ? </label>
-                  <input
-                    class="form-control"
-                    type="email"
-                    required
-                    id="input_504"
-                  />
+                  <label for="info"> Comment nous avez-vous connu ? </label>
+                  <input class="form-control" type="text" required id="info" />
                 </div>
+                <br />
                 <div class="form-group">
-                  <label>
+                  <label for="message">
                     Brief de votre projet (Ajoutez autant de détails que
-                    nécessaire)<br /> </label
+                    nécessaire) *<br />
+                    <br /></label
                   ><textarea
                     id="message"
                     class="form-control"
                     rows="4"
                     cols="50"
+                    placeholder="Votre projet"
                     required
                   ></textarea>
                 </div>
+                <p class="text-danger">* Champs obligatoires</p>
                 <button
                   class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
                   type="submit"
